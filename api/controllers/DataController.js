@@ -13,6 +13,7 @@ module.exports = {
    * `DataController.upload()`
    */
   upload: function (req, res) {
+	console.log(req.method);
     return res.json({
       todo: 'upload() is not implemented yet!'
     });
@@ -23,6 +24,7 @@ module.exports = {
    * `DataController.download()`
    */
   download: function (req, res) {
+	console.log(req.method);
     return res.json({
       todo: 'download() is not implemented yet!'
     });

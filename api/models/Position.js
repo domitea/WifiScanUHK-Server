@@ -1,0 +1,28 @@
+/**
+* Position.js
+*
+* @description :: TODO: You might write a short summary of how this model works and what it represents here.
+* @docs        :: http://sailsjs.org/#!documentation/models
+*/
+
+module.exports = {
+
+  attributes: {
+	x: {
+	type: 'INTEGER'	
+	},
+	
+	y: {
+	type: 'INTEGER'	
+	},
+	// nazev pozice (upresneni)
+	title: {
+	type: 'STRING'	
+	},
+
+	scans:{ collection: 'scan', via: 'position'},
+
+	level:{ model: 'level'}
+  }
+};
+

@@ -13,10 +13,8 @@ module.exports = {
    * `DataController.upload()`
    */
   upload: function (req, res) {
-	console.log(req.method);
-    return res.json({
-      todo: 'upload() is not implemented yet!'
-    });
+	level = Level.create(req.allParams()).exec(function createCB(err,created){console.log("Yes!")});
+    return res.json(level);
   },
 
 
@@ -25,9 +23,6 @@ module.exports = {
    */
   download: function (req, res) {
 	console.log(req.method);
-    return res.json({
-      todo: 'download() is not implemented yet!'
-    });
   }
 };
 

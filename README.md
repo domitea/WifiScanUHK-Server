@@ -1,3 +1,3 @@
-# Bakala
+# WifiScanUHK-Server
 
-a [Sails](http://sailsjs.org) application
+Server na sdílení dat psaný v rámci mé bakalářské práce. Je postaven na frameworku [Sails](http://sailsjs.org)
